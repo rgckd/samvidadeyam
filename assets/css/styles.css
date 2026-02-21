@@ -65,6 +65,18 @@ body {
   font-weight: 700;
 }
 
+.nav-toggle {
+  display: none;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  color: #111827;
+  font-size: 22px;
+  line-height: 1;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
 .hero {
   min-height: 300px;
   color: #f8fafc;
@@ -199,6 +211,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+    position: relative;
   }
 
   .brand {
@@ -207,10 +220,26 @@ body {
     overflow-wrap: anywhere;
   }
 
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 16px;
+  }
+
   .main-nav {
     width: 100%;
+    display: none;
+    flex-direction: column;
     gap: 10px 14px;
     justify-content: flex-start;
+    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 10px;
+  }
+
+  .main-nav.is-open {
+    display: flex;
   }
 
   .hero {
@@ -258,6 +287,10 @@ body {
 @media (max-width: 480px) {
   .header-inner {
     padding: 10px 12px;
+  }
+
+  .nav-toggle {
+    right: 12px;
   }
 
   .brand {

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Samvidadeyam Trust</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/nav-toggle.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.getRegistrations().then(function (registrations) {
@@ -22,7 +23,8 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html"><img src="assets/images/f651f8dab14121c9a48cfe487e30b380.jpg" alt="Logo" />Samvidadeyam Trust</a>
-      <nav class="main-nav" aria-label="Main menu">
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="main-menu" aria-expanded="false">☰</button>
+      <nav id="main-menu" class="main-nav" aria-label="Main menu">
         <a href="index.html">Home</a>
         <a href="About.html">About</a>
         <a href="Activities.html">Activities</a>
