@@ -72,6 +72,18 @@ body {
   padding: 48px 20px;
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+
+.hero-logo {
+  position: absolute;
+  top: 12px;
+  left: 220px;
+  width: 264px;
+  height: 264px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.85);
 }
 
 .hero-overlay {
@@ -150,6 +162,13 @@ body {
 }
 
 @media (max-width: 900px) {
+  .hero-logo {
+    width: 132px;
+    height: 132px;
+    left: 20px;
+    top: 20px;
+  }
+
   .hero h1 {
     font-size: 36px;
   }
