@@ -6,6 +6,7 @@
   <title>About | Samvidadeyam Trust</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <script defer src="assets/js/nav-toggle.js"></script>
+  <script defer src="assets/js/about-carousel.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.getRegistrations().then(function (registrations) {
@@ -45,8 +46,66 @@
       <p>Samvidadeyam Trust is dedicated to sharing Vedic knowledge with responsibility, compassion, and clarity.</p>
       <p>We support authentic Veda learning, spiritual retreats, and service initiatives that uplift communities.</p>
     </div>
+
+    <div class="panel about-history-panel">
+      <h2 class="section-title">Our Journey</h2>
+      <p>Samvidadeyam Trust began as a small satsang initiative focused on preserving authentic Vedic learning and making spiritual guidance accessible to families and youth.</p>
+      <p>Over the years, the trust has expanded into structured teaching circles, retreat programs, and community service efforts with support from volunteers, teachers, and donors.</p>
+      <p>Today, we continue this mission with transparent stewardship, practical outreach, and long-term spiritual education rooted in dharmic values.</p>
+    </div>
+
+    <div class="panel member-carousel-panel">
+      <h2 class="section-title">Key Members</h2>
+      <p>Meet some of the core members who guide our programs and help ensure accountability for every offering.</p>
+
+      <div class="member-carousel" data-member-carousel>
+        <button class="carousel-control prev" type="button" aria-label="Previous member" data-carousel-prev>&#10094;</button>
+
+        <div class="member-slides">
+          <article class="member-slide is-active" data-member-slide>
+            <img src="https://picsum.photos/seed/samvida-member-1/480/480" alt="Portrait of Sri Raghav Sharma" loading="lazy" />
+            <div class="member-info">
+              <h3>Sri Raghav Sharma</h3>
+              <p class="member-role">Founder Trustee</p>
+              <p>Leads the vision of the trust, mentors Veda study cohorts, and oversees program integrity and long-term donor stewardship.</p>
+            </div>
+          </article>
+
+          <article class="member-slide" data-member-slide>
+            <img src="https://picsum.photos/seed/samvida-member-2/480/480" alt="Portrait of Smt. Meera Iyer" loading="lazy" />
+            <div class="member-info">
+              <h3>Smt. Meera Iyer</h3>
+              <p class="member-role">Community Programs Lead</p>
+              <p>Coordinates retreats, volunteer engagement, and outreach initiatives that connect spiritual learning with service-oriented action.</p>
+            </div>
+          </article>
+
+          <article class="member-slide" data-member-slide>
+            <img src="https://picsum.photos/seed/samvida-member-3/480/480" alt="Portrait of Sri Anand Krishnan" loading="lazy" />
+            <div class="member-info">
+              <h3>Sri Anand Krishnan</h3>
+              <p class="member-role">Treasurer & Governance Advisor</p>
+              <p>Supports responsible financial planning, compliance practices, and transparent reporting to ensure donor confidence.</p>
+            </div>
+          </article>
+        </div>
+
+        <button class="carousel-control next" type="button" aria-label="Next member" data-carousel-next>&#10095;</button>
+      </div>
+
+      <div class="carousel-dots" role="tablist" aria-label="Member carousel navigation">
+        <button class="carousel-dot is-active" type="button" aria-label="Show member 1" data-carousel-dot="0"></button>
+        <button class="carousel-dot" type="button" aria-label="Show member 2" data-carousel-dot="1"></button>
+        <button class="carousel-dot" type="button" aria-label="Show member 3" data-carousel-dot="2"></button>
+      </div>
+    </div>
   </main>
 
-  <footer class="site-footer">Copyright © 2026 Samvidadeyam Trust. All rights reserved.</footer>
+  <footer class="site-footer">
+    <p class="footer-copy">Copyright © 2026 Samvidadeyam Trust. All rights reserved.</p>
+    <nav class="footer-nav" aria-label="Footer links">
+      <a href="https://www.youtube.com/@ramakrishnann6651" target="_blank" rel="noopener noreferrer">YouTube Channel</a>
+    </nav>
+  </footer>
 </body>
 </html>
