@@ -131,43 +131,91 @@ body {
 }
 
 .cards {
-  margin-top: 20px;
+  margin-top: 24px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  gap: 22px;
+  align-items: stretch;
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.68));
+  border: 1px solid rgba(148, 163, 184, 0.26);
+  border-radius: 16px;
   min-height: 160px;
-  padding: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.13);
 }
 
 .card-title {
   display: block;
-  margin: 0 0 6px;
-  font-size: 25px;
+  margin: 0;
+  font-size: 30px;
   font-weight: 700;
-  letter-spacing: 0.02em;
-  line-height: 1.2;
+  letter-spacing: 0.005em;
+  line-height: 1.25;
   color: #1e3a8a;
 }
 
 .impact-card {
-  background: linear-gradient(160deg, rgba(219, 234, 254, 0.75), rgba(191, 219, 254, 0.55));
-  border-color: rgba(96, 165, 250, 0.55);
+  background: linear-gradient(180deg, rgba(239, 246, 255, 0.9), rgba(219, 234, 254, 0.62));
+  border-color: rgba(96, 165, 250, 0.4);
+}
+
+.impact-note {
+  margin: 0;
+  color: #1e293b;
+  font-weight: 600;
+  line-height: 1.6;
+  max-width: 36ch;
+}
+
+.event-image-link {
+  display: block;
+  margin-top: 2px;
+}
+
+.event-image {
+  display: block;
+  width: 100%;
+  height: 162px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(191, 219, 254, 0.85);
+  box-shadow: 0 8px 18px rgba(30, 58, 138, 0.1);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.event-image-link:hover .event-image {
+  opacity: 0.94;
+  transform: scale(1.01);
+}
+
+.event-note {
+  margin: 4px 0 0;
+  color: #1e293b;
+  font-weight: 600;
+  line-height: 1.55;
 }
 
 .events-card {
-  background: linear-gradient(160deg, rgba(224, 242, 254, 0.75), rgba(186, 230, 253, 0.55));
-  border-color: rgba(56, 189, 248, 0.5);
+  background: linear-gradient(180deg, rgba(240, 249, 255, 0.9), rgba(224, 242, 254, 0.65));
+  border-color: rgba(56, 189, 248, 0.35);
 }
 
 .donation-card {
-  background: linear-gradient(160deg, rgba(254, 242, 248, 0.75), rgba(224, 231, 255, 0.55));
-  border-color: rgba(236, 72, 153, 0.4);
+  background: linear-gradient(180deg, rgba(250, 245, 255, 0.9), rgba(238, 242, 255, 0.66));
+  border-color: rgba(199, 210, 254, 0.6);
 }
 
 .page-banner {
@@ -208,12 +256,19 @@ body {
 }
 
 .donation-details {
-  margin-top: 10px;
+  margin-top: 4px;
+  display: grid;
+  gap: 6px;
 }
 
 .donation-details p {
-  margin: 0 0 6px;
-  line-height: 1.5;
+  margin: 0;
+  line-height: 1.45;
+}
+
+.donation-details p strong {
+  color: #1e3a8a;
+  font-weight: 700;
 }
 
 .cta-buttons {
@@ -502,6 +557,10 @@ body {
   .activities-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .card-title {
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -655,6 +714,10 @@ body {
 
   .hero p {
     font-size: 16px;
+  }
+
+  .card-title {
+    font-size: 22px;
   }
 
   .panel,
