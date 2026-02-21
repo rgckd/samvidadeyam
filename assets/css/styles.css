@@ -326,6 +326,39 @@ body {
   border-color: #2563eb;
 }
 
+.pathashala-panel {
+  margin-top: 16px;
+}
+
+.pathashala-layout {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: minmax(240px, 360px) 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.pathashala-photo-wrap {
+  margin: 0;
+}
+
+.pathashala-photo {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  object-fit: cover;
+  background: #e5e7eb;
+}
+
+.pathashala-details h3 {
+  margin: 0 0 8px;
+}
+
+.pathashala-details address {
+  font-style: normal;
+  line-height: 1.7;
+}
+
 @media (max-width: 1200px) {
   .hero-logo {
     width: 200px;
@@ -463,6 +496,10 @@ body {
     width: 34px;
     height: 34px;
     font-size: 20px;
+  }
+
+  .pathashala-layout {
+    grid-template-columns: 1fr;
   }
 }
 
