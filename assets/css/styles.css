@@ -161,6 +161,15 @@ body {
   padding: 16px;
 }
 
+@media (max-width: 1200px) {
+  .hero-logo {
+    width: 200px;
+    height: 200px;
+    left: 120px;
+    top: 16px;
+  }
+}
+
 @media (max-width: 900px) {
   .hero-logo {
     width: 132px;
