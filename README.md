@@ -13,7 +13,7 @@ Website project for Samvidadeyam.
 
 ## Run Locally
 
-Open `Home.html` in a browser.
+Open `index.html` in a browser.
 
 ## Secret Scanning (Pre-commit)
 

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Samvidadeyam Trust</title>
+  <link rel="canonical" href="https://samvidadeyam.in/About/" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script defer src="../assets/js/nav-toggle.js"></script>
+  <script defer src="../assets/js/about-carousel.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function (registrations) {
+        registrations.forEach(function (registration) { registration.unregister(); });
+      });
+    }
+    if ('caches' in window) {
+      caches.keys().then(function (keys) {
+        keys.forEach(function (key) { caches.delete(key); });
+      });
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../"><img src="../assets/images/f651f8dab14121c9a48cfe487e30b380.jpg" alt="Logo" />Samvidadeyam Trust</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="main-menu" aria-expanded="false">☰</button>
+      <nav id="main-menu" class="main-nav" aria-label="Main menu">
+        <a href="../">Home</a>
+        <a class="active" href="../About/">About</a>
+        <a href="../Activities/">Activities</a>
+        <a href="../Contribute/">Contribute</a>
+        <a href="../Contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner" style="background-image:linear-gradient(rgba(15,23,42,.55),rgba(15,23,42,.55)),url('../assets/images/187c2c570bc12698776ea4d8d3055aa4.jpg')">
+    <h1>About Us</h1>
+  </section>
+
+  <main class="content">
+    <div class="panel">
+      <h2 class="section-title">Who We Are</h2>
+      <p>Samvidadeyam Trust is dedicated to sharing Vedic knowledge with responsibility, compassion, and clarity.</p>
+      <p>We support authentic Veda learning, spiritual retreats, and service initiatives that uplift communities.</p>
+    </div>
+
+    <div class="panel about-history-panel">
+      <h2 class="section-title">Our Journey</h2>
+      <p>Samvidadeyam Trust began as a small satsang initiative focused on preserving authentic Vedic learning and making spiritual guidance accessible to families and youth.</p>
+      <p>Over the years, the trust has expanded into structured teaching circles, retreat programs, and community service efforts with support from volunteers, teachers, and donors.</p>
+      <p>Today, we continue this mission with transparent stewardship, practical outreach, and long-term spiritual education rooted in dharmic values.</p>
+    </div>
+
+    <div class="panel member-carousel-panel">
+      <h2 class="section-title">Key Members</h2>
+      <p>Meet some of the core members who guide our programs and help ensure accountability for every offering.</p>
+
+      <div class="member-carousel" data-member-carousel>
+        <button class="carousel-control prev" type="button" aria-label="Previous member" data-carousel-prev>&#10094;</button>
+
+        <div class="member-slides">
+          <article class="member-slide is-active" data-member-slide>
+            <img src="https://picsum.photos/seed/samvida-member-1/480/480" alt="Portrait of Sri Raghav Sharma" loading="lazy" />
+            <div class="member-info">
+              <h3>Sri Raghav Sharma</h3>
+              <p class="member-role">Founder Trustee</p>
+              <p>Leads the vision of the trust, mentors Veda study cohorts, and oversees program integrity and long-term donor stewardship.</p>
+            </div>
+          </article>
+
+          <article class="member-slide" data-member-slide>
+            <img src="https://picsum.photos/seed/samvida-member-2/480/480" alt="Portrait of Smt. Meera Iyer" loading="lazy" />
+            <div class="member-info">
+              <h3>Smt. Meera Iyer</h3>
+              <p class="member-role">Community Programs Lead</p>
+              <p>Coordinates retreats, volunteer engagement, and outreach initiatives that connect spiritual learning with service-oriented action.</p>
+            </div>
+          </article>
+
+          <article class="member-slide" data-member-slide>
+            <img src="https://picsum.photos/seed/samvida-member-3/480/480" alt="Portrait of Sri Anand Krishnan" loading="lazy" />
+            <div class="member-info">
+              <h3>Sri Anand Krishnan</h3>
+              <p class="member-role">Treasurer & Governance Advisor</p>
+              <p>Supports responsible financial planning, compliance practices, and transparent reporting to ensure donor confidence.</p>
+            </div>
+          </article>
+        </div>
+
+        <button class="carousel-control next" type="button" aria-label="Next member" data-carousel-next>&#10095;</button>
+      </div>
+
+      <div class="carousel-dots" role="tablist" aria-label="Member carousel navigation">
+        <button class="carousel-dot is-active" type="button" aria-label="Show member 1" data-carousel-dot="0"></button>
+        <button class="carousel-dot" type="button" aria-label="Show member 2" data-carousel-dot="1"></button>
+        <button class="carousel-dot" type="button" aria-label="Show member 3" data-carousel-dot="2"></button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-copy">Copyright © 2026 Samvidadeyam Trust. All rights reserved.</p>
+    <nav class="footer-nav" aria-label="Footer links">
+      <a href="https://www.youtube.com/@ramakrishnann6651" target="_blank" rel="noopener noreferrer">YouTube Channel</a>
+    </nav>
+  </footer>
+</body>
+</html>
