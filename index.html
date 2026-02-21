@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samvidadeyam Trust</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function (registrations) {
+        registrations.forEach(function (registration) { registration.unregister(); });
+      });
+    }
+    if ('caches' in window) {
+      caches.keys().then(function (keys) {
+        keys.forEach(function (key) { caches.delete(key); });
+      });
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><img src="assets/images/f651f8dab14121c9a48cfe487e30b380.jpg" alt="Logo" />Samvidadeyam Trust</a>
+      <nav class="main-nav" aria-label="Main menu">
+        <a class="active" href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Activities.html">Activities</a>
+        <a href="Events.html">Events</a>
+        <a href="Contribute.html">Contribute</a>
+        <a href="Contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" style="background-image:linear-gradient(rgba(15,23,42,.55),rgba(15,23,42,.55)),url('assets/images/2c7b78aff94c588260a7f0cad84a165a.jpg')">
+    <div class="hero-overlay">
+      <h1>Sharing Knowledge for Spiritual Growth</h1>
+      <p>
+        “Samvida Deyam” is a phrase derived from the Taittiriya Upanishad, which is a part of the Vedas.
+        It means to give with understanding, implying that the giver should be aware of the situation,
+        the recipient, and the appropriateness of the act.
+      </p>
+    </div>
+  </section>
+
+  <main class="content">
+    <h3 class="section-title">Our Mission</h3>
+    <p>We are a trust dedicated to pooling resources for authentic Veda learning, spiritual retreats, and community upliftment.</p>
+    <div class="cards">
+      <div class="card"><strong>Our Impact</strong></div>
+      <div class="card"><strong>Upcoming Events</strong></div>
+      <div class="card"><strong>Donate Today</strong></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">Copyright © 2025 Samvidadeyam Trust. All rights reserved.</footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Activities | Samvidadeyam Trust</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function (registrations) {
+        registrations.forEach(function (registration) { registration.unregister(); });
+      });
+    }
+    if ('caches' in window) {
+      caches.keys().then(function (keys) {
+        keys.forEach(function (key) { caches.delete(key); });
+      });
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><img src="assets/images/f651f8dab14121c9a48cfe487e30b380.jpg" alt="Logo" />Samvidadeyam Trust</a>
+      <nav class="main-nav" aria-label="Main menu">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a class="active" href="Activities.html">Activities</a>
+        <a href="Events.html">Events</a>
+        <a href="Contribute.html">Contribute</a>
+        <a href="Contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner" style="background-image:linear-gradient(rgba(15,23,42,.55),rgba(15,23,42,.55)),url('assets/images/9a4f166a19222e68a7c6951aca61d77e.jpg')">
+    <h1>Activities</h1>
+  </section>
+
+  <main class="content">
+    <div class="panel">
+      <h2 class="section-title">What We Do</h2>
+      <ul>
+        <li>Veda education programs and learning circles</li>
+        <li>Meditation sessions and spiritual discourse</li>
+        <li>Community service and outreach projects</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="site-footer">Copyright © 2025 Samvidadeyam Trust. All rights reserved.</footer>
+</body>
+</html>
