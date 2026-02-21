@@ -173,6 +173,23 @@ body {
   padding-left: 0;
 }
 
+.contribute-donation-panel {
+  margin-top: 16px;
+}
+
+.donation-card {
+  min-height: 220px;
+}
+
+.donation-details {
+  margin-top: 10px;
+}
+
+.donation-details p {
+  margin: 0 0 6px;
+  line-height: 1.5;
+}
+
 .cta-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -351,16 +368,32 @@ body {
 }
 
 .activity-tile {
-  background: rgba(255, 255, 255, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.45), rgba(219, 234, 254, 0.45));
+  border: 1px solid rgba(147, 197, 253, 0.55);
   border-radius: 12px;
   padding: 14px;
   display: flex;
   flex-direction: column;
 }
 
+.activity-tile:nth-child(1) {
+  background: linear-gradient(160deg, rgba(219, 234, 254, 0.6), rgba(191, 219, 254, 0.45));
+  border-color: rgba(96, 165, 250, 0.55);
+}
+
+.activity-tile:nth-child(2) {
+  background: linear-gradient(160deg, rgba(224, 242, 254, 0.6), rgba(186, 230, 253, 0.45));
+  border-color: rgba(56, 189, 248, 0.45);
+}
+
+.activity-tile:nth-child(3) {
+  background: linear-gradient(160deg, rgba(254, 242, 248, 0.55), rgba(224, 231, 255, 0.45));
+  border-color: rgba(236, 72, 153, 0.35);
+}
+
 .activity-tile h3 {
   margin: 0 0 8px;
+  color: #1e3a8a;
 }
 
 .activity-tile p {
