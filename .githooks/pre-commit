@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+set -eu
+
+if ! command -v gitleaks >/dev/null 2>&1; then
+  echo "gitleaks is required but was not found in PATH." >&2
+  echo "Install it from https://github.com/gitleaks/gitleaks and retry." >&2
+  exit 1
+fi
+
+echo "Running secret scan on staged changes..."
+gitleaks git --staged --redact --config .gitleaks.toml --no-banner

@@ -1,0 +1,4 @@
+title = "Samvidadeyam gitleaks config"
+
+[extend]
+useDefault = true

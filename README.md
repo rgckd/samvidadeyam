@@ -14,3 +14,16 @@ Website project for Samvidadeyam.
 ## Run Locally
 
 Open `Home.html` in a browser.
+
+## Secret Scanning (Pre-commit)
+
+This repo includes a pre-commit hook powered by `gitleaks` to block committing secrets.
+
+### One-time setup
+
+1. Install `gitleaks`:
+	- Windows (winget): `winget install Gitleaks.Gitleaks`
+2. Enable repo hooks path:
+	- `git config core.hooksPath .githooks`
+
+After setup, every commit scans staged changes automatically.
